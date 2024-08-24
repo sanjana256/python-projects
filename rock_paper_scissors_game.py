@@ -12,7 +12,6 @@ def user_choice():
 def computer_choice():
     return random.choice(game)
 
-
 def winner(user, computer):
     if user == computer:
         return "It's a tie!"
@@ -23,7 +22,25 @@ def winner(user, computer):
     else:
         return "You lose!"
 
+def print_instructions():
+    """
+    Prints the game instructions to guide the user on how to play.
+    """
+    print("\nWelcome to Rock, Paper, Scissors!")
+    print("You will play against the computer.")
+    print("\nInstructions:")
+    print("1. You will be prompted to choose between 'rock', 'paper', or 'scissors'.")
+    print("2. The computer will randomly select one of these options.")
+    print("3. The winner is determined based on the following rules:")
+    print("   - Rock crushes scissors")
+    print("   - Paper covers rock")
+    print("   - Scissors cuts paper")
+    print("4. After each round, the scores will be updated and displayed.")
+    print("5. You can choose to play another round or exit the game at any time.")
+    print("Let's get started!\n")
+
 def main():
+    print_instructions()
     user_score = 0
     computer_score = 0
 
@@ -46,5 +63,7 @@ def main():
           print("Thanks for playing!")
           break
 main()
+
+
 
 
