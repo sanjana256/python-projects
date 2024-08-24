@@ -4,5 +4,6 @@ Welcome to the repository containing various basic Python projects. This collect
 Projects
 
 1. To-Do List Application
+   A To-Do List application is a useful project that helps users manage and organize their tasks efficiently. This project aims to    create a command-line or GUI-based application using Python, allowingusers to create, update, and track their to-do lists.
 
 2. Password Generator
